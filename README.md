@@ -8,7 +8,7 @@ This is a simple program that can help you manage your git repositories. Now the
 
 ### Push code to remote repository
 
-use `git-tools` command directly in the terminal;
+use `gitpush` command directly in the terminal;
 
 ## Environment
 
@@ -18,4 +18,10 @@ use `git-tools` command directly in the terminal;
 
 ## How to compile
 
-1. Run `go build main.go gitutils.go` command in the terminal to compile the program.
+GOOS=darwin GOARCH=amd64 go build -o gitPush-darwin-amd64
+GOOS=linux GOARCH=amd64 go build -o gitPush-linux-amd64
+GOOS=windows GOARCH=amd64 go build -o gitPush-windows-amd64.exe
+
+gitPush-darwin-amd64 for MacOS
+gitPush-linux-amd64 for Linux
+gitPush-windows-amd64.exe for Windows
