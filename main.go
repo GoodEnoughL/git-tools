@@ -47,6 +47,11 @@ func main() {
 	if branchType == "task" || branchType == "subtask" || branchType == "subTask" {
 		targetBranch = findParentBranch()
 	}
+	fmt.Printf("Version: %s\n", version)
+	fmt.Printf("Jira ID: %s\n", jiraID)
+	fmt.Printf("Commit message: %s\n", commitMessage)
+	fmt.Printf("Title: %s\n", title)
+	fmt.Printf("\033[34mTarget branch: %s\033[0m\n", targetBranch)
 	// if !installGlabIfNeeded() {
 	// 	log.Fatal("Cannot continue without glab.")
 	// }
